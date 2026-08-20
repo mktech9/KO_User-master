@@ -6,7 +6,7 @@ import "@/utils/mongo-models";
 // const MONGO_URI =
 //   "mongodb+srv://projectko365:project365@cluster0.kpm8o4j.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
 // const MONGO_URI = "mongodb://127.0.0.1:27017/test";
-const MONGO_URI = "mongodb+srv://mahir44khan_db_user:yNSkxAFJWJpdLlGW@krossover.iwi96cs.mongodb.net/test?retryWrites=true&w=majority&appName=krossover";
+// const MONGO_URI = process.env.MONGO_URI;
 const cached = {};
 
 const connectMongo = async () => {
