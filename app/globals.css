@@ -1,0 +1,74 @@
+/* .advanced-search .mantine-Chip-label:not([data-checked="true"]) {
+  background-color: #fff !important;
+} */
+
+/* body {
+  font-family: "Lato", sans-serif !important;
+} */
+
+/* @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap");
+
+body {
+  font-family: "Quicksand", sans-serif !important;
+} */
+
+body {
+  -webkit-print-color-adjust: exact !important;
+  top: 0px !important;
+}
+
+.spinner {
+  margin: 0 auto !important;
+  width: fit-content !important;
+}
+
+.pill {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  background-color: #fff;
+  padding: 8px 16px;
+  border-radius: 12px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.spinner-text {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.moveable-origin {
+  visibility: hidden !important;
+}
+
+div[id^="font-picker"] {
+  box-shadow: none !important;
+  background: transparent !important;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.dropdown-button {
+  background: transparent !important;
+}
+
+.skiptranslate {
+  visibility: hidden !important;
+  display: none !important;
+  height: 0px !important;
+}
+
+iframe.skiptranslate {
+  display: "none !important";
+}
+
+.demoPage {
+  width: 350px;
+  height: 500px;
+  background-color: aliceblue;
+}
+
+#font-picker {
+  width: 100% !important;
+}

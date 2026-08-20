@@ -1,0 +1,9 @@
+.item {
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+  color: black;
+}
+
+.item:hover {
+  background-color: #f8f8f8;
+}

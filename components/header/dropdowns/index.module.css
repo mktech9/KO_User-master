@@ -1,0 +1,111 @@
+.active {
+  background-color: #f4f4f4 !important;
+  position: relative;
+  border-left: 5px solid #049bd0 !important;
+  padding-left: 15px !important;
+}
+
+.item {
+  &:hover {
+    background-color: #f4f4f4 !important;
+    position: relative;
+    border-left: 5px solid #049bd0 !important;
+    padding-left: 15px !important;
+    font-weight: 700 !important;
+  }
+}
+
+.hover_link {
+  transition: all 0.3s ease-out;
+
+  &:hover {
+    font-weight: 700 !important;
+  }
+}
+
+.hover_link2 {
+  transition: all 0.3s ease-out;
+
+  &:hover {
+    font-weight: 850 !important;
+  }
+}
+
+
+.navLink {
+  transition: all 0.3s ease-in-out;
+  display: inline-block !important;
+  position: relative !important;
+
+  &:hover {
+    color: #049bd0 !important;
+    font-weight: 700 !important;
+    border-radius: 0 !important;
+  }
+}
+
+.navLink::before {
+  background-color: #031d44;
+}
+
+.nav-link {
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #031d44;
+  padding: 20px 0px;
+  margin: 0px 20px;
+  opacity: 0.75;
+}
+
+.nav-link:hover {
+  opacity: 1;
+}
+
+.nav-link::before {
+  transition: 300ms;
+  height: 5px;
+  content: "";
+  position: absolute;
+  background-color: #031d44;
+}
+
+.nav-link-ltr::before {
+  width: 0%;
+  bottom: 10px;
+}
+
+.nav-link-ltr:hover::before {
+  width: 100%;
+}
+
+.nav-link-fade-up::before {
+  width: 100%;
+  bottom: 5px;
+  opacity: 0;
+}
+
+.nav-link-fade-up:hover::before {
+  bottom: 10px;
+  opacity: 1;
+}
+
+.navLinkGrowUp::before {
+  height: 0%;
+  width: 100%;
+  bottom: 0px;
+}
+
+.navLinkGrowUp:hover::before {
+  height: 5px;
+}
+
+.active::before {
+  width: 20px;
+  height: 20px;
+  background-color: #049bd0;
+  position: absolute;
+  left: 0;
+  top: 0;
+}

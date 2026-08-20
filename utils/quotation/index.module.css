@@ -1,0 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+.quotation {
+  font-family: "Open Sans", sans-serif !important;
+  display: none;
+  -webkit-print-color-adjust: exact !important;
+}
