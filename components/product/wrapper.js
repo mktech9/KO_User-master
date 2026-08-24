@@ -44,10 +44,33 @@ const ProductDetailsWrapper = ({
   const [product, setProduct] = useState(initialProduct);
 
  
+useEffect(() => {
+  if (!initialProduct) {
+    return;
+  }
 
-  useEffect(() => {
-    setProduct(initialProduct);
-  }, [initialProduct]);
+  setProduct((currentProduct) => {
+    if (
+      !currentProduct?.code ||
+      currentProduct.code !== initialProduct.code
+    ) {
+      return initialProduct;
+    }
+
+    const cleanedProduct = Object.fromEntries(
+      Object.entries(initialProduct).filter(
+        ([, value]) =>
+          value !== undefined &&
+          value !== null
+      )
+    );
+
+    return {
+      ...currentProduct,
+      ...cleanedProduct,
+    };
+  });
+}, [initialProduct?.code]);
 
 
 
