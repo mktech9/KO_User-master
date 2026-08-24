@@ -2,6 +2,7 @@ import connectMongo from "@/utils/mongoose";
 import HomeLayout from "@/utils/mongo-models/home-layout";
 import Product from "@/utils/mongo-models/product";
 
+
 import { Box, Stack } from "@mantine/core";
 import FullScreenSlider from "./components/full-screen-slider";
 import Banner from "./components/banner";

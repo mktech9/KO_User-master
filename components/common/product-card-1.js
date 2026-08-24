@@ -115,7 +115,7 @@ const ProductCard1 = ({ data, disableColor, reseller }) => {
           <Space h={15} />
           <Box px={10} pb={10}>
             <Stack gap={7}>
-              {!isVendor && (
+              {/* {!isVendor && ( */}
                 <Text fw={700} lh={1.2} size="14px">
                   {isSlashedPrice && (
                     <Text span fw={600} c="#e74033" td="line-through" pr={4}>
@@ -124,7 +124,7 @@ const ProductCard1 = ({ data, disableColor, reseller }) => {
                   )}
                   <CurrencyReadOnly currency="aed" value={prodPrice} /> / unit
                 </Text>
-              )}
+              {/* )} */}
               {data?.qty > 0 ? (
                 <>
                   {showQty && (

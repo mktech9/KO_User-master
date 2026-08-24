@@ -4,7 +4,7 @@ import HomeWrapper from "@/components/home";
 import { SetLabel } from "./labels-async";
 import { Image } from "@mantine/core";
 
-export const revalidate = 600;
+export const revalidate = 0;
 
 export async function generateMetadata() {
   let configs = await SetLabel();

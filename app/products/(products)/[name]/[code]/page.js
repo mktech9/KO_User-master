@@ -42,7 +42,10 @@ export async function generateMetadata({ params }) {
       description: product?.meta?.description
         ? product?.meta?.description
         : `${product?.brand ?? ""} (${product?.code ?? ""})`,
-      url: `${configs?.url}/products/${product?._id}`,
+      // url: `${configs?.url}/products/${product?._id}`,
+      url: `https://www.kross-over.net/products/${encodeURIComponent(
+  product?.name?.replace(/\s/g, "-")
+)}/${encodeURIComponent(product?.code)}`,
       siteName: configs?.siteName,
       images: product?.images?.map((doc) => {
         return {
